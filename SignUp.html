@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Baby Blog</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+    background: url('http://i.imgur.com/Eor57Ae.jpg') no-repeat fixed center center;
+    background-size: cover;
+    font-family: Montserrat;
+    }
+  </style>
+</head>
+<body>
+         <h1 style="color:white; margin-left: 525px">Baby Blog</h1>
+          <div class="login-block">
+            <FORM role="form" method="post" action="doSignUp.php" enctype="multipart/form-data">
+              <INPUT TYPE="hidden" NAME="id" value="<?php echo $id?>">  
+                <h1>Sign UP</h1>
+                <input type="text" value="" placeholder="Username" id="username" name="username" / required>
+                <input type="password" value="" placeholder="Password" id="password" name="password" / required>
+                <input name="imageupload" type="file" size="35"/>
+                Sex:
+                <input type="radio" name="sex" value="man" style="width:20px" required>Man
+                <input type="radio" name="sex" value="woman" style="width:20px" required>Woman
+                <!--ห้ามลบเด็ดขาด ไม่งั้นรูปจะไม่ขึ้น-->
+                <input type="submit" name="submit" value="Submit"/>
+
+
+            </FORM>
+          </div>
+  
+
+</body>
+</html>
